@@ -7,7 +7,7 @@ function creat_List(count){
         infi_list.appendChild(li);
     }
 }
-creat_List(count);
+creat_List(10);
 window.addEventListener("scroll",()=>{
 	if(window.innerHeight + window.scrollY>=document.documentElement.scrollHeight){
 		
