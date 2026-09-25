@@ -1,11 +1,15 @@
 //your code here!
 const infi_list=document.getElementById("infi-list");
-function creat_List(count){
-	 for (let i = 0; i < count; i++) {
-        const li = document.createElement("li");
-        li.innerText = "List Item";
-        infi_list.appendChild(li);
-    }
+function creat_List() {
+    const li = document.createElement("li");
+    li.innerText = "List Item";
+    infi_list.appendChild(li);
+}
+
+// Initial 10
+for (let i = 0; i < 10; i++) {
+    creat_List();
+}
 }
 creat_List(10);
 window.addEventListener("scroll",()=>{
