@@ -1,16 +1,13 @@
 //your code here!
 const infi_list=document.getElementById("infi-list");
-function creat_List(){
-	infi_list.innerHTML+=`
-	<li>hello</li>
-	<li>bro</li>
-	`
+function creat_List(count){
+	 for (let i = 0; i < count; i++) {
+        const li = document.createElement("li");
+        li.innerText = "List Item";
+        infi_list.appendChild(li);
+    }
 }
-creat_List();
-creat_List();
-creat_List();
-creat_List();
-creat_List();
+creat_List(count);
 window.addEventListener("scroll",()=>{
 	if(window.innerHeight + window.scrollY>=document.documentElement.scrollHeight){
 		
